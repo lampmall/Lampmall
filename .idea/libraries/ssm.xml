@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ssm">
+    <CLASSES>
+      <root url="file://D:/$课件/jar/jar包/ssm" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://D:/$课件/jar/jar包/ssm" recursive="false" />
+  </library>
+</component>
