@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lamp.dao.UserDao">
+    <select id="findAccount" resultType="com.lamp.entity.User">
+        select * from users where name=#{name}
+    </select>
+    <select id="findurid" resultType="int">
+        select roleid from users_roles where userid=#{userid}
+    </select>
+    <select id="findResourceeByUser" resultType="com.lamp.entity.Resource2">
+        select * from resources r left join roles_resource rr on r.id=rr.resourceid where rr.roleid=#{roleid} and rid=0
+    </select>
+    <select id="findSubByRid" resultType="com.lamp.entity.Resource2" parameterType="map">
+        select * from resources r left join roles_resource rr on r.id=rr.resourceid where rid=#{rid} and rr.roleid=#{roleid}
+    </select>
+</mapper>

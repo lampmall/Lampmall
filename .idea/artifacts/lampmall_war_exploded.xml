@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="lampmall" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="4.3" />
+          <element id="library" level="project" name="shiro" />
+          <element id="library" level="project" name="ssm" />
+        </element>
       </element>
     </root>
   </artifact>
