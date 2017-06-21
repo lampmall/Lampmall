@@ -57,7 +57,7 @@ public class UserController {
     @ResponseBody
     public List<Resource2> findSubByRid(int rid,HttpSession session){
         int roleid=(int)session.getAttribute("roleid");
-        System.out.println(roleid+" "+rid);
+        System.out.println(roleid+"   "+rid);
         Map data=new HashMap();
         data.put("rid",rid);
         data.put("roleid",roleid);
