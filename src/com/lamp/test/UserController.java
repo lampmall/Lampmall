@@ -64,7 +64,7 @@ public class UserController {
         List<Resource2> list=us.findSubByRid(data);
         for (Resource2 resq: list
                 ) {
-            System.out.println(resq.getId()+" "+resq.getTask()+" "+resq.getRid());
+            System.out.println(resq.getId()+"      "+resq.getTask()+" "+resq.getRid());
         }
         return us.findSubByRid(data);
     }
