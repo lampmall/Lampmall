@@ -53,7 +53,6 @@ public class UserController {
         }
             return us.findResourceeByUser(roleid);
     }
-
     @RequestMapping(value = "findSubByRid.do")
     @ResponseBody
     public List<Resource2> findSubByRid(int rid,HttpSession session){
